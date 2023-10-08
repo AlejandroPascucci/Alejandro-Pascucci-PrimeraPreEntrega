@@ -48,9 +48,9 @@ function entradaDePais(input) {
     }
 }
 
-let inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, escriba 'ESC' para entrar a la página");
+let inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, o escriba 'ESC' para entrar a la página");
 
 while (inicio.toUpperCase() !== "ESC") {
     entradaDePais(inicio);
-    inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, escriba 'ESC' para entrar a la página");
+    inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, o escriba 'ESC' para entrar a la página");
 }
