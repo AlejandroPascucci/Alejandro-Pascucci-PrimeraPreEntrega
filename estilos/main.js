@@ -34,10 +34,17 @@
 // }
 
 
+let inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, presiona cancelar o escribí 'ESC' para entrar a la página");
+
+while (inicio.toUpperCase() !== "ESC") {
+    entradaDePais(inicio);
+    inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, presiona cancelar o escribí 'ESC' para entrar a la página");
+}
+
 function entradaDePais(input) {
     switch (input.toLowerCase()) {
         case "argentina":
-            alert("Hacemos envíos y los precios en dólares se toman al tipo de cambio del dólar tarjeta.");
+            alert("Hacemos envíos a todo el país. Los precios en dólares se toman al tipo de cambio del dólar tarjeta.");
             break;
         case "":
             alert("Campo requerido, ingrese su país.");
@@ -46,11 +53,4 @@ function entradaDePais(input) {
             alert("Consulte por formas de pago y envíos a " + input);
             break;
     }
-}
-
-let inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, o escriba 'ESC' para entrar a la página");
-
-while (inicio.toUpperCase() !== "ESC") {
-    entradaDePais(inicio);
-    inicio = prompt("Bienvenido a ADP helmets, ingrese su país de residencia, o escriba 'ESC' para entrar a la página");
 }
